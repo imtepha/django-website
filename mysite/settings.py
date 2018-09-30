@@ -52,6 +52,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
+# static file setup
+STATIC_ROOT = "/home/steph/PythonPlayground/blog/static"
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
 # Dir is where the template live
 TEMPLATES = [
     {
