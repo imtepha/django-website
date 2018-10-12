@@ -15,9 +15,16 @@ Including another URLconf
 """
 from django.urls import path, include
 from django.contrib import admin
+from django.conf.urls import url
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
 ]
+
+admin.site.site_header = 'My admin' #changing the header
+admin.site.index_title = 'Admin page
+
+
 
